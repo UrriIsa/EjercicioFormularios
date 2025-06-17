@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Statics/ejemploeEstilos.css">
+    <title>Pedido de Productos</title>
+</head>
+<body>
+    <h2>Pedido de Productos</h2>
+    <form>
+        <label for="nombre">Nombre del solicitante:</label>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+
+        <label>Turno preferido de la entrega:</label>
+        <input type="radio" id="masculino" name="genero" value="masculino">
+        <label for="masculino">Matutino</label>
+        <input type="radio" id="femenino" name="genero" value="femenino">
+        <label for="femenino">Vespertino</label>
+        <input type="radio" id="mixto" name="genero" value="mixto">
+        <label for="mixto">Mixto</label>
+        <br> <br>
+
+        <label for="producto">Selecciona un producto:</label>
+        <select id="producto" name="producto">
+            <option value="producto1">Galletas de chocolate</option>
+            <option value="producto2">Leche deslactozada</option>
+            <option value="producto3">Papas fritas</option>
+        </select> <br> <br>
+
+        <label for="cantidad">Cantidad:</label>
+        <input type="number" id="cantidad" name="cantidad" min="1" required><br><br>
+
+        <label>Extras del pedido:</label>
+        <input type="checkbox" id="caja" name="intereses" value="caja">
+        <label for="tecnologia">Caja</label>
+        <input type="checkbox" id="bolsa" name="intereses" value="bolsa">
+        <label for="musica">Bolsa</label><br><br>
+
+        <label for="pais">País:</label>
+        <select id="pais" name="pais">
+            <option value="mexico">México</option>
+            <option value="españa">España</option>
+            <option value="otros">Otros</option>
+        </select><br><br>
+
+        <label for="fecha">Fecha de pedido:</label>
+        <input type="date" id="fecha" name="fecha" required><br><br>
+
+        <label for="imagen">Subir imagen del local:</label>
+        <input type="file" id="imagen" name="imagen" accept="image/*"> <br><br>
+
+        <label for="comentarios">Comentarios:</label>
+        <textarea id="comentarios" name="comentarios" placeholder="Escribe tus comentarios"></textarea><br><br>
+
+        <input type="submit" value="Enviar Pedido">
+    </form>
+</body>
+</html>
+

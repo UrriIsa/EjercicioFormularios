@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ede9e9;
+    text-align: center;
+    padding: 20px;
+}
+
+h2 {
+    color: #101dd6;
+}
+
+form {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    display: inline-block;
+    text-align: left;
+}
+
+label {
+    font-weight: bold;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0c470f;
+}
