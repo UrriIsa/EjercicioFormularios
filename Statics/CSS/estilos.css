@@ -1,0 +1,113 @@
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #667eea ;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    padding: 40px;
+    max-width: 600px;
+    width: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    font-size: 2.5rem;
+}
+
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #555;
+    font-size: 1.1rem;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="file"],
+select,
+textarea {
+    width: 100%;
+    padding: 12px 16px;
+    border: 2px solid #e1e5e9;
+    border-radius: 12px;
+    font-size: 16px;
+    background: white;
+}
+
+.radio-group,
+.checkbox-group {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.radio-item,
+.checkbox-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 12px;
+    border-radius: 8px;
+}
+
+.radio-item:hover,
+.checkbox-item:hover {
+    background-color: rgba(102, 126, 234, 0.1);
+}
+
+.verification-section {
+    background: #9bb2ff;
+    padding: 20px;
+    border-radius: 12px;
+    color: white;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.math-problem {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.verification-input {
+    width: 150px !important;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+
+#verificationMessage .message {
+  display: inline-block;
+  padding: 0.5rem;
+  border-radius: 8px;
+}
+
+/* fondo y color para el éxito */
+#verificationMessage .success-message {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+/* fondo y color para el error */
+#verificationMessage .error-message {
+  background-color: #f8d7da;
+  color: #721c24
+
