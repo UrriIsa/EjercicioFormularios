@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Completo</title>
+    <link rel="stylesheet" href="./Statics/CSS/estilos.css">
+    </head>
+<body>
+    <div class="container">
+        <h1>Formulario Completo</h1>
+        
+        <form id="mainForm">
+            <div class="form-group">
+                <label for="nombre">Nombre completo:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+
+            <div class="form-group">
+                <label>Género:</label>
+                <div class="radio-group">
+                    <div class="radio-item">
+                        <input type="radio" id="masculino" name="genero" value="masculino">
+                        <label for="masculino">Masculino</label>
+                    </div>
+                    <div class="radio-item">
+                        <input type="radio" id="femenino" name="genero" value="femenino">
+                        <label for="femenino">Femenino</label>
+                    </div>
+                    <div class="radio-item">
+                        <input type="radio" id="otro" name="genero" value="otro">
+                        <label for="otro">Otro</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Intereses (selecciona todos los que apliquen):</label>
+                <div class="checkbox-group">
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="tecnologia" name="intereses" value="tecnologia">
+                        <label for="tecnologia">Tecnología</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="deportes" name="intereses" value="deportes">
+                        <label for="deportes">Deportes</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="musica" name="intereses" value="musica">
+                        <label for="musica">Música</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="arte" name="intereses" value="arte">
+                        <label for="arte">Arte</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="pais">País:</label>
+                <select id="pais" name="pais" required>
+                    <option value="">Selecciona tu país</option>
+                    <option value="mexico">México</option>
+                    <option value="españa">España</option>
+                    <option value="argentina">Argentina</option>
+                    <option value="colombia">Colombia</option>
+                    <option value="peru">Perú</option>
+                    <option value="chile">Chile</option>
+                    <option value="venezuela">Venezuela</option>
+                    <option value="otros">Otros</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="comentarios">Comentarios adicionales:</label>
+                <textarea id="comentarios" name="comentarios" placeholder="Escribe tus comentarios aquí..."></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="imagen">Subir imagen:</label>
+                <input type="file" id="imagen" name="imagen" accept="image/*">
+            </div>
+
+            <div class="form-group">
+                <label>Verificación de seguridad:</label>
+                <div class="verification-section">
+                    <div class="math-problem" id="mathProblem"></div>
+                    <input type="number" id="verification" name="verification" class="verification-input" placeholder="Tu respuesta" required>
+                    <button type="button" class="refresh-btn" onclick="generateMathProblem()">Regenerar</button>
+                </div>
+                <div id="verificationMessage"></div>
+            </div>
+
+            <button type="submit" class="submit-btn">Enviar Formulario</button>
+        </form>
+    </div>
+    <script src="Dynamics/JS/validaciones.js"></script>
+</body>
+</html>
