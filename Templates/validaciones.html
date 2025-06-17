@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Completo</title>
+    <link rel="stylesheet" href="../Statics/CSS/estilos.css">
+    </head>
+<body>
+    <div class="container">
+        <h1>Formulario Completo</h1>
+        
+        <form id="mainForm" >
+            <div class="form-group">
+                <label for="nombre">Nombre completo:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <span class="span_error" id="span_nombre">Campo vacío</span>
+            </div>
+
+            
+            
+            <div class="form-group">
+                <label for="nombre">CURP:</label>
+                <input type="text" id="curp" name="curp" required>
+                <span class="span_error" id="span_nombre">Campo vacío</span>
+            </div>
+
+            <div class="form-group">
+                <label for="nombre">Número de mascotas:</label>
+                <input type="text" id="mascotas" name="mascotas" required>
+                <span class="span_correcto" id="span_nombre">Campo correcto</span>
+            </div>
+
+            <div class="form-group">
+                <label for="">Papas que te comerías</label>
+                <label for="sabritas">Sabritas</label>
+                <input type="checkbox" name="papas" id="sabritas" value="sabritas">
+                <label for="doritos">Doritos</label>
+                <input type="checkbox" name="papas" id="doritos" value="doritos">
+                <label for="chetos">Chetos</label>
+                <input type="checkbox" name="papas" id="chetos" value="chetos">
+            </div>
+
+            <div class="form-group">
+                <label for="nombre">Número de mascotas:</label>
+                <input type="radio" id="mascotas" name="mascotas">
+                <span class="span_correcto" id="span_nombre">Campo correcto</span>
+            </div>
+            
+            <button type="submit" class="submit-btn">Enviar Formulario</button>
+        </form>
+
+    </div>
+    <script src="../Dynamics/JS/funciones_validacion.js"></script>
+</body>
+</html>

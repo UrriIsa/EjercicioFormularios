@@ -43,7 +43,7 @@ select,
 textarea {
     width: 100%;
     padding: 12px 16px;
-    border: 2px solid #e1e5e9;
+    border: 2px solid #e9e4e1;
     border-radius: 12px;
     font-size: 16px;
     background: white;
@@ -111,3 +111,16 @@ textarea {
   background-color: #f8d7da;
   color: #721c24
 
+}
+
+.span_correcto{
+    color: green;
+    font-weight: bolder;
+    display: block;
+}
+
+.span_error{
+    color: red;
+    font-weight: bolder;
+    display: block;
+}
